@@ -126,6 +126,14 @@ func TestTags(t *testing.T) {
 	testExampleFile(t, cfg, "./data/misc/tags/tags.json")
 }
 
+func TestEnumsAsString(t *testing.T) {
+	t.Parallel()
+
+	cfg := basicConfig
+	cfg.EnumsAsString = true
+	testExampleFile(t, cfg, "./data/misc/enumsAsString/enumsAsString.json")
+}
+
 func TestStructNameFromTitle(t *testing.T) {
 	t.Parallel()
 

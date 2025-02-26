@@ -1,0 +1,27 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://example.com/object",
+  "type": "object",
+  "title": "object",
+  "properties": {
+    "myObject": {
+      "type": "object",
+      "required": [
+        "myEnum",
+        "myString"
+      ],
+      "properties": {
+        "myEnum": {
+          "type": "string",
+          "enum": [
+            "VALUE1",
+            "VALUE2"
+          ]
+        },
+        "myString": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
